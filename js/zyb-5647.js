@@ -15,3 +15,11 @@ Let nr3 = nr1 + nr2;
 
 console.log(`Array- 1 $ {nr1}`);
 console.log(`Array- 2 $ {nr1}`);
+
+//Listando um array 
+
+nr3.forEach((iemdoArray)=>{
+
+console.log(`ARRAY SENDO LISTADO $ {nR3}`);
+
+})
