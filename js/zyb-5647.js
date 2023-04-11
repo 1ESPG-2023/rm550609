@@ -23,3 +23,4 @@ nr3.forEach((iemdoArray)=>{
 console.log(`ARRAY SENDO LISTADO $ {nR3}`);
 
 })
+.
