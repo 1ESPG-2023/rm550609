@@ -36,7 +36,7 @@ nr3.forEach((iemdoArray)=>{
 
     liElement.map((item,key)=>{
         if (item.textContent == "Item-39") {
-        console.log(`${key+1} - ${item.textContent = "0"}`)
+        console.log(`${key+1} - ${item.textContent = "localizado"}`)
         }
     })
 
