@@ -25,7 +25,7 @@ nr3.forEach((iemdoArray)=>{
 
 // listando array com map
     nr3.map((numero,key)=>{
-        console.log(`${(key + 1)} itens do array - ${numero} `);
+        console.log(`${(key + 1)} itens do arrayyy - ${numero} `);
         numero.forEach((digitos)=>{
 
         })
@@ -39,5 +39,14 @@ nr3.forEach((iemdoArray)=>{
         console.log(`${key+1} - ${item.textContent = "localizado"}`)
         }
     })
+
+    function soma(){
+        nr1=10;
+        nr2=5;
+        console.log(`resultado : ${nr1 + nr2}`);
+        console.log(`ESTE É O PARAMETRO QUE FOI PASSADO PARA A FUNÇÃO: $(parametro)`)
+    }
+
+    soma();
 
  
