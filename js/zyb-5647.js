@@ -70,3 +70,33 @@ const mudaCor = ()=>{
 }
 
 mudaCor()
+
+//salvar tudo depois do mudarcor
+
+const botao = document.querySelector('.central button');
+
+botao.addEventListener("click" , ()=>{
+    const imgLampada = document.querySelector(".central img");
+}
+    if(this.textContent == "LIGA") {
+        imgLampada.src = "./img/pic_bulbon.gif"
+        botao.textContent = "DELIGA";
+    }else{
+        imgLampada.src = "./img/pic_button.gif"
+        botao.textContent = "LIGAR";
+    }
+
+function ligaDesliga() {
+
+    const imgLampada = document.querySelector(".central img");
+
+    const botao = document.querySelector(".central button");
+}
+    if(botao.textContent == "LIGAR"){
+        imgLampada.src ="./img/pic_button.gif"
+        botao.textContent = "DESLIGA";
+    
+    }else{
+        imgLampada.src = "./img/pic_button.gif"
+        botao.textContent = "LIGAR";
+}
