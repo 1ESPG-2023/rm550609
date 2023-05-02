@@ -51,52 +51,22 @@
 //         console.log(`${key+1} - ${item.textContent = "LOCALIZADO"}`)
 //     }
 // })
+const inputUser = document.querySelector("input[name='nmUser']");
 
-function soma(p1,p2,p3) {
-    nr1 = p1;
-    nr2 = p2;
-    resultado = parseInt(nr1) + parseInt(nr2) + parseInt(p3)
-    console.log(`O Resultado é : ${resultado}.`)
-    return (resultado)
-    // console.log(`Resultado : ${parseInt(nr1) + parseInt(nr2) + parseInt(parametro)}`);
-    // console.log(`Este é o parâmetro que foi passado : ${parametro}`);
-}
+inputUser.addEventListener("focus", ()=>{
+    inputUser.setAttribute("style", "border:solid 1px #hh0000;");
+});
 
-//ARROW FUNCTION
-const mudaCor = ()=>{
-    
-    //FUNÇÃO SET-TIME-OUT
-    setTimeout(soma, 5000, 100,100,100);
-}
+inputUser.addEventListener("keytup", ()=>{
+    inputUser.setAttribute("style", "outline-color: #ff0000 ");
+});
 
-mudaCor()
+inputUser.addEventListener("keyup", ()=>{
+    if(inputUser.ariaValueMax.lenght < 8){
+        inputUser.setAttribute("style","outline-color:#ff0000");
 
-//salvar tudo depois do mudarcor
-
-const botao = document.querySelector('.central button');
-
-botao.addEventListener("click" , ()=>{
-    const imgLampada = document.querySelector(".central img");
-}
-    if(this.textContent == "LIGA") {
-        imgLampada.src = "./img/pic_bulbon.gif"
-        botao.textContent = "DELIGA";
     }else{
-        imgLampada.src = "./img/pic_button.gif"
-        botao.textContent = "LIGAR";
+        inputUser.setAttribute("style","outline-color:#dddddd");
     }
 
-function ligaDesliga() {
-
-    const imgLampada = document.querySelector(".central img");
-
-    const botao = document.querySelector(".central button");
-}
-    if(botao.textContent == "LIGAR"){
-        imgLampada.src ="./img/pic_button.gif"
-        botao.textContent = "DESLIGA";
-    
-    }else{
-        imgLampada.src = "./img/pic_button.gif"
-        botao.textContent = "LIGAR";
-}
+});
